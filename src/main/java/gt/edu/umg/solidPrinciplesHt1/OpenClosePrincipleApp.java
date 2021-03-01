@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SolidPrinciplesHt1Application {
+public class OpenClosePrincipleApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SolidPrinciplesHt1Application.class, args);
+		SpringApplication.run(OpenClosePrincipleApp.class, args);
 	}
 
 }

@@ -1,0 +1,15 @@
+package gt.edu.umg.solidPrinciplesHt1.controller;
+
+import gt.edu.umg.solidPrinciplesHt1.model.service.MissionApolloProgram;
+import gt.edu.umg.solidPrinciplesHt1.model.service.MissionSkylabProgram;
+import gt.edu.umg.solidPrinciplesHt1.model.service.SpaceMissionCalendar;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SkylabMissionController {
+    @GetMapping("/spaceMission/1973")
+    public String getNameSpaceMission(){
+        return new SpaceMissionCalendar(new MissionSkylabProgram()).getNameSpaceMission();
+    }
+}
