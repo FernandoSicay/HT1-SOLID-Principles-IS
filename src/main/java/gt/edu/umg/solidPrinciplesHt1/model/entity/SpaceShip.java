@@ -3,14 +3,13 @@ package gt.edu.umg.solidPrinciplesHt1.model.entity;
 public abstract class SpaceShip {
 
     protected String name;
-    protected int humansCuatity;
 
 
     public String takeoff(){
-        return "I am taking off";
+        return "Taking off...";
     }
 
     public String missionInfo(){
-        return "Mission info";
+        return "Mission Name: " + this.name;
     }
 }

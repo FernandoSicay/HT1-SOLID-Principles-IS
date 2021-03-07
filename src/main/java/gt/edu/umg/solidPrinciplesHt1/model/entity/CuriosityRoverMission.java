@@ -1,6 +1,6 @@
 package gt.edu.umg.solidPrinciplesHt1.model.entity;
 
-public class CuriosityRoverMission extends SpaceShip{
+public class CuriosityRoverMission extends SpaceShipUnmanned{
     
 
     @Override
@@ -11,8 +11,8 @@ public class CuriosityRoverMission extends SpaceShip{
     @Override
     public String missionInfo() {
         super.name = "Curiosity Rover Mission";
-        super.humansCuatity = 0;
+        super.roversCuantity = 2;
 
-        return "Mission Name: " + super.name + "Humans Cuantity = "+  "Sorry. I can't transport humans";
+        return "Mission Name: " + name + "Humans Cuantity = " + roversCuantity;
     }
 }

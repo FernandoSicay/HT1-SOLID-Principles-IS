@@ -1,6 +1,6 @@
 package gt.edu.umg.solidPrinciplesHt1.model.entity;
 
-public class ApolloSpaceMission extends SpaceShip {
+public class ApolloSpaceMission extends SpaceShipManned {
 
     @Override
     public String takeoff() {
@@ -11,8 +11,8 @@ public class ApolloSpaceMission extends SpaceShip {
     public String missionInfo() {
 
         super.name = "Apollo Space Mission";
-        super.humansCuatity = 5;
+        super.humansCuantity = 5;
 
-        return "Mission Name: " + super.name + "Humans Cuantity = " +  super.humansCuatity;
+        return "Mission Name: " + name + "Humans Cuantity = " +  humansCuantity;
     }
 }
