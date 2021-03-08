@@ -9,8 +9,8 @@ public class TodayMenu {
     private int price;
     private List<Object> menu;
 
-    public TodayMenu() {
-        this.menu = new McDonnalsAPI().bigMc();
+    public TodayMenu(ITodayMenu todayMenu) {
+        this.menu = todayMenu.getMenu();
         this.name = (String) this.menu.get(0);
         this.price = (Integer) this.menu.get(1);
     }

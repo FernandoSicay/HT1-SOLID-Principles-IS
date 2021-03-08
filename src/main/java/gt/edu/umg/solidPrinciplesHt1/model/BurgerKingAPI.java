@@ -4,15 +4,15 @@ package gt.edu.umg.solidPrinciplesHt1.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class McDonnalsAPI implements ITodayMenu{
+public class BurgerKingAPI implements ITodayMenu{
     protected String name;
     protected int price;
 
-    public List<Object> bigMc(){
+    public List<Object> kingMenu(){
         List<Object> menu = new ArrayList();
 
-        this.name = "bigMc";
-        this.price = 35;
+        this.name = "king Menu";
+        this.price = 40;
 
         menu.add(this.name);
         menu.add(this.price);
@@ -22,6 +22,6 @@ public class McDonnalsAPI implements ITodayMenu{
 
     @Override
     public List<Object> getMenu() {
-        return bigMc();
+        return kingMenu();
     }
 }
