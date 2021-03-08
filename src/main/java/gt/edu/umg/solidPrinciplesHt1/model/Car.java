@@ -1,7 +1,7 @@
 package gt.edu.umg.solidPrinciplesHt1.model;
 
 
-public class Car implements IVehicle{
+public class Car implements IMove, IEngine, IBrake{
     @Override
     public String starEngine() {
         return "Starting Engining...";
@@ -22,13 +22,4 @@ public class Car implements IVehicle{
         return "turning left";
     }
 
-    @Override
-    public String takeOff() {
-        return new UnsupportedOperationException().getMessage() + " I can't take off";
-    }
-
-    @Override
-    public String fly() {
-        return new UnsupportedOperationException().getMessage() + " I can´t fly";
-    }
 }

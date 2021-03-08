@@ -1,6 +1,6 @@
 package gt.edu.umg.solidPrinciplesHt1.model;
 
-public class Plane implements IVehicle{
+public class Plane implements IMove, IEngine, IBrake,IFly {
 
     @Override
     public String starEngine() {
